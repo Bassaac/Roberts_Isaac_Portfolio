@@ -1,0 +1,333 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'montserrat';
+    }
+    
+    section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .hero {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .hero2 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .hero_cnt {
+        position: relative;
+        transition: 1s;
+        height: 100vh;
+        display: flex;
+        animation: an;
+    }
+    
+    .hero_cnt2 {
+        position: relative;
+        transition: 1s;
+        height: 100vh;
+        display: flex;
+        animation: an;
+    }
+    
+    .hero_cnt h2 {
+        font-size: 4em;
+        position: relative;
+    }
+    
+    .hero_cnt2 h2 {
+        font-size: 4em;
+        position: relative;
+    }
+    
+    .hero_cnt video {
+        box-sizing: border-box;
+        background-size: cover;
+        -webkit-box-sizing: border-box;
+        width: 768px;
+        height: 100vh;
+    }
+    
+    .hero_cnt2 video {
+        box-sizing: border-box;
+        background-size: cover;
+        -webkit-box-sizing: border-box;
+        width: 768px;
+        height: 100vh;
+    }
+    
+    .hero_cnt p {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: larger;
+        padding: 10px;
+    }
+    
+    .hero_cnt2 p {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: larger;
+        padding: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .vid1 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .vid2 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .down_btn img {
+        width: 50px;
+        position: absolute;
+        bottom: 0;
+        animation: dwn_btn duration timing-function delay iteration-count direction fill-mode;
+    }
+    
+    .txt_cnt {
+        align-items: center;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .txt_cnt2 {
+        align-items: center;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .txt_cnt h2 {
+        padding: 10px;
+    }
+    
+    .txt_cnt p {
+        align-items: center;
+    }
+    
+    .iconss {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(-10px, -90px);
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    
+    .iconss .fa {
+        padding: 10px;
+        font-size: 1.7em;
+    }
+    
+    .iconss .fa:nth-child(1):hover {
+        color: rgb(2, 235, 2);
+        cursor: pointer;
+        font-size: 2em;
+    }
+    
+    .iconss .fa:nth-child(2):hover {
+        color: purple;
+        cursor: pointer;
+        font-size: 2em;
+    }
+    
+    .iconss .fa:nth-child(3):hover {
+        color: rgb(79, 79, 219);
+        cursor: pointer;
+        font-size: 2em;
+    }
+    
+    //progress bar and icons//
+    .txtlg {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icn {
+        display: flex;
+        position: relative;
+        width: 17px;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .image1 {
+        display: flex;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .parent {
+        position: relative;
+        width: 200px;
+        border: 1.7px solid black;
+        height: 17px;
+        display: flex;
+        border-radius: 9px;
+        background-color: rgb(250, 255, 255);
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .parent1 {
+        position: relative;
+        width: 200px;
+        border: 1.7px solid black;
+        height: 17px;
+        display: flex;
+        border-radius: 9px;
+        background-color: rgb(250, 255, 255);
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .parent2 {
+        position: relative;
+        width: 200px;
+        border: 1.7px solid black;
+        height: 17px;
+        display: flex;
+        border-radius: 9px;
+        background-color: rgb(250, 255, 255);
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .child {
+        position: relative;
+        margin: .4px;
+        width: 120px;
+        height: 14px;
+        display: flex;
+        border-radius: 7px;
+        background: linear-gradient( red, rgb(112, 62, 5));
+        animation: bar 1s ease-in-out 1 normal forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    .child2 {
+        position: relative;
+        margin: .4px;
+        width: 170px;
+        height: 14px;
+        display: flex;
+        border-radius: 7px;
+        background: linear-gradient( rgb(247, 163, 129), rgb(199, 108, 5));
+        animation: bar 1s ease-in-out 1 normal forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    .child1 {
+        position: relative;
+        margin: .4px;
+        width: 147px;
+        height: 14px;
+        display: flex;
+        border-radius: 7px;
+        background: linear-gradient( rgba(20, 208, 255, 0.884), rgba(2, 104, 117, 0.808));
+        animation: bar 1s ease-in-out 1 normal forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    .parent::after {
+        content: "67%";
+        color: white;
+        font-size: 12px;
+        font-weight: bolder;
+        display: flex;
+        position: absolute;
+        right: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .parent2::after {
+        content: "91%";
+        color: white;
+        font-size: 12px;
+        font-weight: bolder;
+        display: flex;
+        position: absolute;
+        right: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .parent1::after {
+        content: "72%";
+        color: white;
+        font-size: 12px;
+        font-weight: bolder;
+        display: flex;
+        position: absolute;
+        right: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @keyframes bar {
+        0% {
+            width: 0px;
+        }
+        70% {
+            width: 195px;
+        }
+        100% {
+            width: 100%px;
+        }
+    }
