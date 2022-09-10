@@ -23,6 +23,12 @@ a {
           box-sizing: border-box;
 }
 
+img.wako {
+  width: 20%;
+  position: absolute;
+  right: 0;
+}
+
 .menu li a {
   text-decoration: none;
   color: inherit;
@@ -83,22 +89,38 @@ img#hoverme {
 }
 
 .menu ul li:hover {
-  color: #949494;
+  color: #383737;
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
   text-transform: uppercase;
 }
 
+.menu ul li::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  display: block;
+  position: relative;
+  background-color: #c17300;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 7px;
+}
+
+.menu ul li:hover::after {
+  width: 95%;
+}
+
 .menu ul li:nth-child(2):hover {
-  color: #949494;
+  color: #383737;
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .menu ul li:nth-child(3):hover {
-  color: #949494;
+  color: #383737;
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
@@ -126,7 +148,7 @@ img#hoverme {
 }
 
 .icon-btn {
-  width: 28px;
+  width: 20px;
   background-color: black;
   height: 4px;
   -webkit-box-align: center;
@@ -173,21 +195,21 @@ img#hoverme {
 }
 
 .icon-btn:hover {
-  background-color: #9494a0;
+  background-color: #292120;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .icon-btn:hover::after {
-  background-color: #9494a0;
+  background-color: #292120;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .icon-btn:hover::before {
-  background-color: #9494a0;
+  background-color: #292120;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
@@ -261,6 +283,30 @@ img#hoverme {
 .hero h2 {
   font-size: 3.5em;
   color: #504e4e;
+  -webkit-animation: txtsl .7s ease-in-out 1;
+          animation: txtsl .7s ease-in-out 1;
+}
+
+@-webkit-keyframes txtsl {
+  0% {
+    -webkit-transform: translateX(856px);
+            transform: translateX(856px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes txtsl {
+  0% {
+    -webkit-transform: translateX(856px);
+            transform: translateX(856px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .textslide {
@@ -307,10 +353,10 @@ img#hoverme {
 }
 
 .hero h2 span.name:hover {
-  background-color: black;
+  background-color: rgba(32, 29, 28, 0.842);
   color: white;
-  border-radius: 14px;
-  padding: 5px;
+  border-radius: 15px;
+  padding: 4.5px;
   cursor: pointer;
 }
 
@@ -361,7 +407,6 @@ span.chatme p a {
 }
 
 span.chatme p {
-  border: 2px solid orange;
   padding: 6px;
   border-radius: 18px;
   font-size: .5em;
@@ -373,6 +418,30 @@ span.chatme p {
   width: 100;
   -webkit-transform-origin: left;
           transform-origin: left;
+  -webkit-animation: chatme 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) 10;
+          animation: chatme 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) 10;
+}
+
+@-webkit-keyframes chatme {
+  0% {
+    padding: 6px;
+  }
+  100% {
+    padding: 10px;
+    border-radius: 22px;
+    background-color: #ee9d08;
+  }
+}
+
+@keyframes chatme {
+  0% {
+    padding: 6px;
+  }
+  100% {
+    padding: 10px;
+    border-radius: 22px;
+    background-color: #ee9d08;
+  }
 }
 
 span.chatme p:hover {
@@ -517,6 +586,28 @@ video.vidbcg {
   .hover2 {
     position: relative;
     height: 85%;
+    -webkit-animation: slidein 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1;
+            animation: slidein 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1;
+  }
+  @-webkit-keyframes slidein {
+    0% {
+      -webkit-transform: translateX(-159px);
+              transform: translateX(-159px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes slidein {
+    0% {
+      -webkit-transform: translateX(-159px);
+              transform: translateX(-159px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
   }
   .hero h2 span {
     font-size: calc(1em + 10px);
@@ -524,6 +615,24 @@ video.vidbcg {
     -webkit-transition: .5s;
     transition: .5s;
     line-height: 1.1;
+    -webkit-animation: textanim .1s ease-in-out 1;
+            animation: textanim .1s ease-in-out 1;
+  }
+  @-webkit-keyframes textanim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes textanim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .hero h2 {
     font-size: 2em;
@@ -532,6 +641,23 @@ video.vidbcg {
   }
   .iconss {
     font-size: 10px;
+  }
+  .icon-btn {
+    height: 3px;
+  }
+  .icon-btn::before {
+    height: 3px;
+  }
+  .icon-btn::after {
+    height: 3px;
+  }
+  .menu ul li {
+    padding: 17px;
+    color: black;
+    font-size: 1.5em;
+  }
+  img.wako {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
